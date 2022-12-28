@@ -10,12 +10,18 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/index2.css" />
     <title>Protoje Munich Concert - Home</title>
   </head>
-  <body>
+  <body class="">
     <header>
-      <div>
+      <div class="social_top_bar">
         <nav>
           <ul>
             <li>
@@ -41,41 +47,47 @@
         </nav>
       </div>
 
-      <div>
+      <div class="section_top_bar">
         <nav>
           <a href="index.html"><img src="" alt="" />logo</a>
         </nav>
 
-        <div>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Program</a></li>
-              <li><a href="#">Join</a></li>
-              <li><a href="#">Sponsor</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Buy Tickets</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Buy Tickets</a></li>
+          </ul>
+        </nav>
       </div>
+
+      <nav class="hamburger">
+        <a href="#"><img src="./assets/images/lista.png" alt="menu" /></a>
+      </nav>
     </header>
 
     <main>
-      <section class="heading container-fluid">
-        <p>"Hello Reggae Lover"</p>
-        <h1>Protoje Reggae Concert Munich 2022</h1>
-        <p>
+      <section class="heading d-flex flex-column align-item-center">
+        <p class="p1">"Hello Reggae Lover"</p>
+        <h1>
+          Protoje Reggae <br />
+          Concert Munich <br />
+          2022
+        </h1>
+        <p class="p2">
           Munich is a vibrant city with a rich cultural history, and reggae music has played a significant role in shaping its
-          music scene. Protoje'll turn up the heat in the Olympiahalle Arena.
+          music scene.
         </p>
-        <p>2022.12.27(FRI) and 28(SAT)</p>
-        <p>@Olympiahalle Arena, Munich - Deutschland</p>
+        <h3>2022.12.27(FRI) and 28(SAT)</h3>
+        <h4>@Olympiahalle Arena, Munich - Deutschland</h4>
       </section>
 
-      <section class="main-program">
+      <section class="main_program_section">
         <h2>Main Program</h2>
-        <hr />
+        <hr class="hr1" />
         <div>
           <ul>
             <li>badges</li>

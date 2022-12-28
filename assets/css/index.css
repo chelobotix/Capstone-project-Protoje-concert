@@ -1,16 +1,30 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
-  background-color: #ffebcd;
-}
-body main {
-  height: 100vh;
-  background-image: url("../images/bg-heading.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  max-width: 375px; }
+  body main {
+    height: 100vh; }
+
+@media only screen and (max-width: 767px) {
+  body header .social_top_bar {
+    display: none; }
+  body header .section_top_bar {
+    display: none; }
+  body header .hamburger {
+    padding-top: 20px;
+    padding-left: 20px; }
+    body header .hamburger a img {
+      width: 35px; }
+  body main {
+    background-image: url("../images/mobile_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -90px;
+    margin-left: -1px; } }
+@media only screen and (min-width: 768px) {
+  body header .hamburger {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */
