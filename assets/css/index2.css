@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hr1 {
@@ -20,6 +22,7 @@ body {
 }
 body ul {
   list-style-type: none;
+  padding: 0;
 }
 body main .heading {
   display: flex;
@@ -81,50 +84,40 @@ body main .main_program_section .main_program_section_ul .main_program_card .mai
 }
 body main .featured_performers_section {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body main .featured_performers_section .featured_performers_tittle {
   text-align: center;
   color: #272a31;
 }
 body main .featured_performers_section .featured_performers_section_ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
   margin: 40px 10px 0 10px;
-  padding: 0;
 }
 body main .featured_performers_section .featured_performers_section_ul .featured_performers_card {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  width: 500px;
+  border: 10px solid transparent;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div {
-  width: 50%;
-  height: 170px;
-  position: relative;
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div1 {
+  width: 30%;
+  background-image: url("../images/bg-chess.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div .image_feature1 {
-  width: 50%;
-  max-width: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div .image_feature2 {
-  width: 70%;
-  max-width: 180px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div1 .image_feature2 {
+  width: 90%;
+  max-width: 130px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div {
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  width: 70%;
+  margin-left: 20px;
 }
 body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_h3 {
   font-size: 1.3rem;
@@ -154,6 +147,9 @@ body footer {
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    padding-left: 0;
+  }
   body header .social_top_bar {
     display: none;
   }
@@ -221,22 +217,23 @@ body footer {
     height: 100px;
   }
   body main .main_program_section .main_program_section_ul .main_program_card .div_card1 {
-    width: 10%;
+    width: 20%;
   }
   body main .main_program_section .main_program_section_ul .main_program_card .div_card1 img {
     width: 100%;
   }
   body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
-    color: #fff;
     width: 30%;
     font-size: 1rem;
     padding: 0;
+    margin: 0;
   }
   body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
-    width: 60%;
+    width: 50%;
     font-size: 0.7rem;
     font-weight: 400;
     margin: 0;
+    padding-left: 5px;
   }
   body main .main_program_section .div_button_mobile {
     margin: 0 10px;
@@ -252,7 +249,7 @@ body footer {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 80%;
-    padding: 20px 30px;
+    padding: 5% 10%;
   }
   body main .featured_performers_section {
     margin-top: 30px;
