@@ -1,144 +1,266 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.hr1 {
+  width: 7%;
+  height: 1px;
+  background: #ec5242;
+  margin: auto;
+  border: 0;
+  border-top: 0 solid;
+  opacity: 1;
+}
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 16px; }
-  body main {
-    height: 100vh; }
-    body main .heading {
-      display: flex;
-      flex-direction: column; }
-      body main .heading .p1 {
-        color: #ec5242;
-        font-weight: 600; }
-      body main .heading h1 {
-        background-image: url(../images/h1_bg.jpg);
-        background-repeat: repeat;
-        background-position: -318px 56px;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: left;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-weight: 900;
-        -webkit-font-smoothing: antialiased; }
-      body main .heading .p2 {
-        color: #4f4f4f;
-        font-weight: 500;
-        text-align: left;
-        border: 2px solid #fff; }
-      body main .heading h3 {
-        color: #4f4f4f;
-        font-weight: 900;
-        text-align: left; }
-      body main .heading h4 {
-        color: #4f4f4f;
-        font-weight: 400;
-        text-align: left; }
-    body main .main_program_section {
-      background-image: url("../images/memphis-mini-dark.png");
-      background-repeat: repeat; }
-      body main .main_program_section h2 {
-        color: #fff;
-        text-align: center; }
-      body main .main_program_section .hr1 {
-        width: 7%;
-        height: 1px;
-        background: #ec5242;
-        margin: auto;
-        border: 0;
-        border-top: 0 solid;
-        opacity: 1; }
-      body main .main_program_section ul {
-        list-style-type: none;
-        padding: 0; }
-        body main .main_program_section ul li {
-          background-color: rgba(129, 129, 129, 0.5); }
-          body main .main_program_section ul li h2 {
-            color: #ec5242;
-            font-weight: 600; }
-          body main .main_program_section ul li p {
-            color: #fff; }
+  font-size: 16px;
+}
+body main {
+  height: 100vh;
+}
+body main .heading {
+  display: flex;
+  flex-direction: column;
+}
+body main .heading .heading_p1 {
+  color: #ec5242;
+  font-weight: 600;
+}
+body main .heading h1 {
+  background-image: url(../images/h1_bg.jpg);
+  background-repeat: repeat;
+  background-position: -318px 56px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+}
+body main .heading .heading_p2 {
+  color: #4f4f4f;
+  font-weight: 500;
+  text-align: left;
+  border: 2px solid #fff;
+}
+body main .heading .heading_h3 {
+  color: #4f4f4f;
+  font-weight: 900;
+  text-align: left;
+}
+body main .heading .heading_h4 {
+  color: #4f4f4f;
+  font-weight: 400;
+  text-align: left;
+}
+body main .main_program_section {
+  background-image: url("../images/memphis-mini-dark.png");
+  background-repeat: repeat;
+}
+body main .main_program_section .main_program_section_tittle {
+  color: #fff;
+  text-align: center;
+}
+body main .main_program_section .main_program_section_ul {
+  list-style-type: none;
+  padding: 0;
+}
+body main .main_program_section .main_program_section_ul .main_program_card {
+  background-color: rgba(129, 129, 129, 0.5);
+}
+body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
+  color: #ec5242;
+  font-weight: 600;
+}
+body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
+  color: #fff;
+}
+body main .featured_performers_section {
+  margin-bottom: 30px;
+}
+body main .featured_performers_section .featured_performers_tittle {
+  text-align: center;
+  color: #272a31;
+}
+body main .featured_performers_section .featured_performers_section_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+  margin-top: 40px;
+  padding: 0px 10px 0 10px;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 500px;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div {
+  width: 50%;
+  height: 170px;
+  position: relative;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div .image_feature1 {
+  width: 50%;
+  max-width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div .image_feature2 {
+  width: 70%;
+  max-width: 180px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_p1 {
+  font-size: 0.8rem;
+  color: #ec5242;
+  font-weight: 700;
+  margin: 0;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .hr1 {
+  background: #d3d3d3;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_p2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+body footer {
+  background-color: #272a31;
+}
 
 @media only screen and (max-width: 767px) {
   body header .social_top_bar {
-    display: none; }
+    display: none;
+  }
   body header .section_top_bar {
-    display: none; }
+    display: none;
+  }
   body header .hamburger {
     padding-top: 20px;
-    padding-left: 20px; }
-    body header .hamburger a img {
-      width: 35px; }
+    padding-left: 20px;
+  }
+  body header .hamburger a .hamburger_image {
+    width: 30px;
+  }
   body main {
     background-image: url("../images/mobile_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -59px;
-    margin-left: 0; }
-    body main .heading {
-      padding: 89px 20px 0 20px; }
-      body main .heading .p1 {
-        margin-bottom: 0;
-        font-size: 1.5rem; }
-      body main .heading h1 {
-        font-size: 2.2rem; }
-      body main .heading .p2 {
-        font-size: 1rem;
-        margin-top: 16px;
-        max-width: 530px;
-        padding: 10px; }
-      body main .heading h3 {
-        font-size: 1.8rem; }
-      body main .heading h4 {
-        font-size: 1.2rem; }
+    margin-left: 0;
+  }
+  body main .heading {
+    padding: 89px 20px 0 20px;
+  }
+  body main .heading .heading_p1 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  body main .heading h1 {
+    font-size: 2.2rem;
+  }
+  body main .heading .heading_p2 {
+    font-size: 1rem;
+    margin-top: 16px;
+    max-width: 530px;
+    padding: 10px;
+  }
+  body main .heading .heading_h3 {
+    font-size: 1.8rem;
+  }
+  body main .heading .heading_h4 {
+    font-size: 1.2rem;
+  }
   body .main_program_section {
-    margin-top: 70px; }
-    body .main_program_section h2 {
-      font-size: 1.3rem;
-      padding-top: 30px;
-      padding-bottom: 5px; }
-    body .main_program_section ul {
-      margin: 20px 10px 0 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px; }
-      body .main_program_section ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 10px;
-        gap: 10px;
-        height: 100px; }
-        body .main_program_section ul li .div_card1 {
-          width: 10%; }
-          body .main_program_section ul li .div_card1 img {
-            width: 100%; }
-        body .main_program_section ul li h2 {
-          width: 30%;
-          font-size: 1rem;
-          padding: 0; }
-        body .main_program_section ul li p {
-          width: 60%;
-          font-size: 0.7rem;
-          font-weight: 400;
-          margin: 0; }
-    body .main_program_section .div_button_mobile button {
-      background-color: #ec5242;
-      color: #fff;
-      border: none;
-      padding: 0;
-      font-size: 1.5em;
-      cursor: pointer;
-      outline: inherit;
-      text-align: center;
-      padding: 20px 70px;
-      margin-top: 40px;
-      margin-bottom: 40px; } }
+    margin-top: 70px;
+  }
+  body .main_program_section .main_program_section_tittle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  body .main_program_section .main_program_section_ul {
+    margin: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .main_program_section .main_program_section_ul .main_program_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
+    height: 100px;
+  }
+  body .main_program_section .main_program_section_ul .main_program_card .div_card1 {
+    width: 10%;
+  }
+  body .main_program_section .main_program_section_ul .main_program_card .div_card1 img {
+    width: 100%;
+  }
+  body .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
+    color: #fff;
+    width: 30%;
+    font-size: 1rem;
+    padding: 0;
+  }
+  body .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
+    width: 60%;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  body .main_program_section .div_button_mobile .main_program_card_btn {
+    background-color: #ec5242;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: inherit;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    padding: 20px 30px;
+  }
+  body .featured_performers_section {
+    margin-top: 30px;
+  }
+  body .featured_performers_section .featured_performers_tittle {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
 @media only screen and (min-width: 768px) {
   body header .hamburger {
-    display: none; } }
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=index2.css.map */
