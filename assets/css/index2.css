@@ -18,12 +18,13 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
 }
-body main {
-  height: 100vh;
+body ul {
+  list-style-type: none;
 }
 body main .heading {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 body main .heading .heading_p1 {
   color: #ec5242;
@@ -66,7 +67,6 @@ body main .main_program_section .main_program_section_tittle {
   text-align: center;
 }
 body main .main_program_section .main_program_section_ul {
-  list-style-type: none;
   padding: 0;
 }
 body main .main_program_section .main_program_section_ul .main_program_card {
@@ -89,10 +89,10 @@ body main .featured_performers_section .featured_performers_tittle {
 body main .featured_performers_section .featured_performers_section_ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
-  list-style-type: none;
-  margin-top: 40px;
-  padding: 0px 10px 0 10px;
+  margin: 40px 10px 0 10px;
+  padding: 0;
 }
 body main .featured_performers_section .featured_performers_section_ul .featured_performers_card {
   display: flex;
@@ -150,6 +150,7 @@ body main .featured_performers_section .featured_performers_section_ul .featured
 }
 body footer {
   background-color: #272a31;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -167,14 +168,15 @@ body footer {
     width: 30px;
   }
   body main {
+    margin-left: 0;
+  }
+  body main .heading {
     background-image: url("../images/mobile_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -59px;
-    margin-left: 0;
-  }
-  body main .heading {
     padding: 89px 20px 0 20px;
+    background-color: aqua;
   }
   body main .heading .heading_p1 {
     margin-bottom: 0;
@@ -195,22 +197,22 @@ body footer {
   body main .heading .heading_h4 {
     font-size: 1.2rem;
   }
-  body .main_program_section {
+  body main .main_program_section {
     margin-top: 70px;
   }
-  body .main_program_section .main_program_section_tittle {
+  body main .main_program_section .main_program_section_tittle {
     font-size: 1.3rem;
     font-weight: 700;
     padding-top: 30px;
     padding-bottom: 5px;
   }
-  body .main_program_section .main_program_section_ul {
+  body main .main_program_section .main_program_section_ul {
     margin: 20px 10px 0 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  body .main_program_section .main_program_section_ul .main_program_card {
+  body main .main_program_section .main_program_section_ul .main_program_card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,25 +220,28 @@ body footer {
     gap: 10px;
     height: 100px;
   }
-  body .main_program_section .main_program_section_ul .main_program_card .div_card1 {
+  body main .main_program_section .main_program_section_ul .main_program_card .div_card1 {
     width: 10%;
   }
-  body .main_program_section .main_program_section_ul .main_program_card .div_card1 img {
+  body main .main_program_section .main_program_section_ul .main_program_card .div_card1 img {
     width: 100%;
   }
-  body .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
+  body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
     color: #fff;
     width: 30%;
     font-size: 1rem;
     padding: 0;
   }
-  body .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
+  body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
     width: 60%;
     font-size: 0.7rem;
     font-weight: 400;
     margin: 0;
   }
-  body .main_program_section .div_button_mobile .main_program_card_btn {
+  body main .main_program_section .div_button_mobile {
+    margin: 0 10px;
+  }
+  body main .main_program_section .div_button_mobile .main_program_card_btn {
     background-color: #ec5242;
     color: #fff;
     border: none;
@@ -249,12 +254,16 @@ body footer {
     width: 80%;
     padding: 20px 30px;
   }
-  body .featured_performers_section {
+  body main .featured_performers_section {
     margin-top: 30px;
   }
-  body .featured_performers_section .featured_performers_tittle {
+  body main .featured_performers_section .featured_performers_tittle {
     font-size: 1.3rem;
     font-weight: 700;
+    margin: 0 10px;
+  }
+  body footer {
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) {
