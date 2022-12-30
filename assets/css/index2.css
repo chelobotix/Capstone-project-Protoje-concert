@@ -1,9 +1,21 @@
-* {
+html * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hr1 {
@@ -16,24 +28,16 @@
   opacity: 1;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-}
-body ul {
-  list-style-type: none;
-  padding: 0;
-}
-body main .heading {
+main .heading {
   display: flex;
   flex-direction: column;
   height: auto;
 }
-body main .heading .heading_p1 {
+main .heading p:nth-of-type(1) {
   color: #ec5242;
   font-weight: 600;
 }
-body main .heading h1 {
+main .heading h1 {
   background-image: url(../images/h1_bg.jpg);
   background-repeat: repeat;
   background-position: -318px 56px;
@@ -45,73 +49,71 @@ body main .heading h1 {
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
 }
-body main .heading .heading_p2 {
+main .heading p:nth-of-type(2) {
   color: #4f4f4f;
   font-weight: 500;
   text-align: left;
   border: 2px solid #fff;
 }
-body main .heading .heading_h3 {
+main .heading h3 {
   color: #4f4f4f;
   font-weight: 900;
   text-align: left;
 }
-body main .heading .heading_h4 {
+main .heading h4 {
   color: #4f4f4f;
   font-weight: 400;
   text-align: left;
 }
-body main .main_program_section {
+main .main_program {
   background-image: url("../images/memphis-mini-dark.png");
   background-repeat: repeat;
 }
-body main .main_program_section .main_program_section_tittle {
+main .main_program h2 {
   color: #fff;
   text-align: center;
+  margin-bottom: 10px;
 }
-body main .main_program_section .main_program_section_ul {
-  padding: 0;
-}
-body main .main_program_section .main_program_section_ul .main_program_card {
+main .main_program ul li {
   background-color: rgba(129, 129, 129, 0.5);
 }
-body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
+main .main_program ul li h2 {
   color: #ec5242;
   font-weight: 600;
 }
-body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
+main .main_program ul li p {
   color: #fff;
 }
-body main .featured_performers_section {
+main .featured_performers {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body main .featured_performers_section .featured_performers_tittle {
+main .featured_performers h2 {
   text-align: center;
   color: #272a31;
 }
-body main .featured_performers_section .featured_performers_section_ul {
+main .featured_performers div ul {
   margin: 40px 10px 0 10px;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card {
+main .featured_performers div ul li {
   display: flex;
   border: 10px solid transparent;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div1 {
+main .featured_performers div ul li div:nth-of-type(1) {
   width: 30%;
   background-image: url("../images/bg-chess.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .image_features_div1 .image_feature2 {
+main .featured_performers div ul li div:nth-of-type(1) img {
   width: 90%;
   max-width: 130px;
   margin-top: 20px;
   margin-left: 20px;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div {
+main .featured_performers div ul li div:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -119,52 +121,47 @@ body main .featured_performers_section .featured_performers_section_ul .featured
   width: 70%;
   margin-left: 20px;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_h3 {
+main .featured_performers div ul li div:nth-of-type(2) h3 {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_p1 {
+main .featured_performers div ul li div:nth-of-type(2) p:nth-of-type(1) {
   font-size: 0.8rem;
   color: #ec5242;
   font-weight: 700;
   margin: 0;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .hr1 {
+main .featured_performers div ul li div:nth-of-type(2) .hr1 {
   background: #d3d3d3;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-body main .featured_performers_section .featured_performers_section_ul .featured_performers_card .text_features_div .text_features_div_p2 {
+main .featured_performers div ul li div:nth-of-type(2) p:nth-of-type(2) {
   font-size: 0.7rem;
   font-weight: 700;
   color: #4f4f4f;
 }
-body footer {
+
+footer {
   background-color: #272a31;
   width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
-  body {
-    padding-left: 0;
-  }
-  body header .social_top_bar {
+  body header .social_bar {
     display: none;
   }
-  body header .section_top_bar {
+  body header .top_bar {
     display: none;
   }
   body header .hamburger {
     padding-top: 20px;
     padding-left: 20px;
   }
-  body header .hamburger a .hamburger_image {
+  body header .hamburger a img {
     width: 30px;
-  }
-  body main {
-    margin-left: 0;
   }
   body main .heading {
     background-image: url("../images/mobile_bg.svg");
@@ -172,43 +169,43 @@ body footer {
     background-size: cover;
     margin-top: -59px;
     padding: 89px 20px 0 20px;
-    background-color: aqua;
   }
-  body main .heading .heading_p1 {
+  body main .heading p:nth-of-type(1) {
     margin-bottom: 0;
     font-size: 1.5rem;
   }
   body main .heading h1 {
     font-size: 2.2rem;
   }
-  body main .heading .heading_p2 {
+  body main .heading p:nth-of-type(2) {
     font-size: 1rem;
-    margin-top: 16px;
+    margin-top: 25px;
     max-width: 530px;
     padding: 10px;
   }
-  body main .heading .heading_h3 {
+  body main .heading h3 {
     font-size: 1.8rem;
   }
-  body main .heading .heading_h4 {
+  body main .heading h4 {
+    margin-top: 10px;
     font-size: 1.2rem;
   }
-  body main .main_program_section {
+  body main .main_program {
     margin-top: 70px;
   }
-  body main .main_program_section .main_program_section_tittle {
+  body main .main_program h2 {
     font-size: 1.3rem;
     font-weight: 700;
     padding-top: 30px;
     padding-bottom: 5px;
   }
-  body main .main_program_section .main_program_section_ul {
+  body main .main_program ul {
     margin: 20px 10px 0 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  body main .main_program_section .main_program_section_ul .main_program_card {
+  body main .main_program ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,29 +213,31 @@ body footer {
     gap: 10px;
     height: 100px;
   }
-  body main .main_program_section .main_program_section_ul .main_program_card .div_card1 {
+  body main .main_program ul li div {
     width: 20%;
   }
-  body main .main_program_section .main_program_section_ul .main_program_card .div_card1 img {
+  body main .main_program ul li div img {
     width: 100%;
   }
-  body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_h2 {
+  body main .main_program ul li h2 {
     width: 30%;
     font-size: 1rem;
     padding: 0;
     margin: 0;
   }
-  body main .main_program_section .main_program_section_ul .main_program_card .main_program_card_p {
+  body main .main_program ul li p {
     width: 50%;
     font-size: 0.7rem;
     font-weight: 400;
     margin: 0;
     padding-left: 5px;
   }
-  body main .main_program_section .div_button_mobile {
+  body main .main_program div {
+    display: flex;
+    justify-content: center;
     margin: 0 10px;
   }
-  body main .main_program_section .div_button_mobile .main_program_card_btn {
+  body main .main_program div button {
     background-color: #ec5242;
     color: #fff;
     border: none;
@@ -251,10 +250,10 @@ body footer {
     width: 80%;
     padding: 5% 10%;
   }
-  body main .featured_performers_section {
+  body main .featured_performers {
     margin-top: 30px;
   }
-  body main .featured_performers_section .featured_performers_tittle {
+  body main .featured_performers h2 {
     font-size: 1.3rem;
     font-weight: 700;
     margin: 0 10px;
@@ -264,6 +263,36 @@ body footer {
   }
 }
 @media only screen and (min-width: 768px) {
+  body header .social_top_bar {
+    background-color: #4f4f4f;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+  }
+  body header .social_top_bar nav .social_top_bar_ul_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 0;
+  }
+  body header .social_top_bar nav .social_top_bar_ul_icon .social_top_bar_icon {
+    width: 15px;
+  }
+  body header .social_top_bar .social_top_bar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+  }
+  body header .social_top_bar .social_top_bar_nav .social_top_bar_ul_link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  body header .social_top_bar .social_top_bar_nav .social_top_bar_ul_link li .social_top_bar_a {
+    color: #fff;
+    font-size: 0.8rem;
+  }
   body header .hamburger {
     display: none;
   }
