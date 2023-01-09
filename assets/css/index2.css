@@ -44,7 +44,6 @@ main .heading h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  font-weight: bold;
   text-transform: uppercase;
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
@@ -145,12 +144,19 @@ main .featured_performers div ul li div:nth-of-type(2) p:nth-of-type(2) {
 }
 
 footer {
-  background-color: #272a31;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer h2 {
+footer .footer1 {
+  background-color: #272a31;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 215px;
+}
+footer .footer1 h2 {
   font-size: 1.3rem;
   font-weight: 500;
   padding-top: 30px;
@@ -158,18 +164,44 @@ footer h2 {
   color: #d3d3d3;
   margin-bottom: 10px;
 }
-footer .hr1 {
+footer .footer1 .hr1 {
   width: 3% !important;
 }
-footer ul {
+footer .footer1 ul {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
   gap: 30px;
 }
-footer ul li img {
+footer .footer1 ul li img {
   width: 64px;
+}
+footer .footer2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 30px;
+  height: 215px;
+}
+footer .footer2 .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer2 .brand h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+footer .footer2 .rights p:nth-of-type(1) {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+footer .footer2 .rights p:nth-of-type(2) {
+  font-size: 0.7rem;
+  color: #4f4f4f;
 }
 
 @media only screen and (max-width: 767px) {

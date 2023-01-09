@@ -1,5 +1,6 @@
 # .gitignore
 node_modules/
 assets/sass/
+*.css.map
 
 
