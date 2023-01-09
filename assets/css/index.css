@@ -34,7 +34,7 @@ main .heading {
   height: auto;
 }
 
-main .heading p:nth-of-type(1) {
+main .heading h2 {
   color: #ec5242;
   font-weight: 600;
 }
@@ -51,7 +51,7 @@ main .heading h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-main .heading p:nth-of-type(2) {
+main .heading p.heading {
   color: #4f4f4f;
   font-weight: 500;
   text-align: left;
@@ -70,12 +70,12 @@ main .heading h4 {
   text-align: left;
 }
 
-main .main_program {
+main section.main_program {
   background-color: #272a31;
   background-repeat: repeat;
 }
 
-main .main_program h2 {
+main .main_program h2.main_program {
   color: #fff;
   text-align: center;
   margin-bottom: 10px;
@@ -94,42 +94,42 @@ main .main_program ul li p {
   color: #fff;
 }
 
-main .featured_performers {
+main section.featured_performers {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main .featured_performers h2 {
+main section.featured_performers h2.featured_performers {
   text-align: center;
   color: #272a31;
 }
 
-main .featured_performers div ul {
+main section.featured_performers div ul {
   margin: 40px 10px 0 10px;
 }
 
-main .featured_performers div ul li {
+main section.featured_performers div ul li {
   display: flex;
   border: 10px solid transparent;
 }
 
-main .featured_performers div ul li div:nth-of-type(1) {
+main section.featured_performers div ul li div:nth-of-type(1) {
   width: 30%;
   background-image: url("../images/bg-chess.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-main .featured_performers div ul li div:nth-of-type(1) img {
+main section.featured_performers div ul li div:nth-of-type(1) img {
   width: 90%;
   max-width: 130px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
-main .featured_performers div ul li div:nth-of-type(2) {
+main section.featured_performers div ul li div:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -138,27 +138,27 @@ main .featured_performers div ul li div:nth-of-type(2) {
   margin-left: 20px;
 }
 
-main .featured_performers div ul li div:nth-of-type(2) h3 {
+main section.featured_performers div ul li div:nth-of-type(2) h3 {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
 }
 
-main .featured_performers div ul li div:nth-of-type(2) p:nth-of-type(1) {
+main section.featured_performers div ul li div:nth-of-type(2) p:nth-of-type(1) {
   font-size: 0.8rem;
   color: #ec5242;
   font-weight: 700;
   margin: 0;
 }
 
-main .featured_performers div ul li div:nth-of-type(2) .hr1 {
+main section.featured_performers div ul li div:nth-of-type(2) .hr1 {
   background: #d3d3d3;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-main .featured_performers div ul li div:nth-of-type(2) p:nth-of-type(2) {
+main section.featured_performers div ul li div:nth-of-type(2) p:nth-of-type(2) {
   font-size: 0.7rem;
   font-weight: 700;
   color: #4f4f4f;
@@ -170,7 +170,7 @@ footer {
   align-items: center;
 }
 
-footer .footer1 {
+footer div.footer1 {
   background-color: #272a31;
   width: 100%;
   display: flex;
@@ -179,7 +179,7 @@ footer .footer1 {
   height: 215px;
 }
 
-footer .footer1 h2 {
+footer .footer1 h2.footer1 {
   font-size: 1.3rem;
   font-weight: 500;
   padding-top: 30px;
@@ -188,11 +188,7 @@ footer .footer1 h2 {
   margin-bottom: 10px;
 }
 
-footer .footer1 .hr1 {
-  width: 3% !important;
-}
-
-footer .footer1 ul {
+footer .footer1 ul.footer1 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -200,7 +196,7 @@ footer .footer1 ul {
   gap: 30px;
 }
 
-footer .footer1 ul li img {
+footer .footer1 ul li img.footer1 {
   width: 64px;
 }
 
@@ -214,27 +210,29 @@ footer .footer2 {
   height: 215px;
 }
 
-footer .footer2 .brand {
+footer div.footer2 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-footer .footer2 .brand h3 {
+footer .footer2 .brand h3.footer2 {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-footer .footer2 .rights p:nth-of-type(1) {
+footer .footer2 .rights p.rights:nth-of-type(1) {
   font-size: 0.8rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-footer .footer2 .rights p:nth-of-type(2) {
-  font-size: 0.7rem;
+footer .footer2 .rights p.rights:nth-of-type(2) {
+  font-size: 0.9rem;
   color: #4f4f4f;
 }
 
+/* Mobile version ************************* */
 @media only screen and (max-width: 767px) {
   body header .social_bar {
     display: none;
@@ -253,7 +251,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     width: 30px;
   }
 
-  body main .heading {
+  body main section.heading {
     background-image: url("../images/mobile_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,7 +259,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     padding: 89px 20px 0 20px;
   }
 
-  body main .heading p:nth-of-type(1) {
+  body main .heading h2 {
     margin-bottom: 0;
     font-size: 1.5rem;
   }
@@ -270,7 +268,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     font-size: 2.2rem;
   }
 
-  body main .heading p:nth-of-type(2) {
+  body main .heading p.heading {
     font-size: 1rem;
     margin-top: 25px;
     max-width: 530px;
@@ -286,7 +284,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     font-size: 1.2rem;
   }
 
-  body main .main_program {
+  body main section.main_program {
     margin-top: 70px;
   }
 
@@ -332,7 +330,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin: 0;
   }
 
-  body main .main_program ul li p {
+  body main .main_program ul li p.main_program {
     width: 50%;
     font-size: 0.7rem;
     font-weight: 400;
@@ -357,6 +355,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 80%;
+    min-width: 260px;
     padding: 5% 10%;
   }
 
@@ -368,7 +367,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-top: 30px;
   }
 
-  body main .featured_performers h2 {
+  body main .featured_performers h2.featured_performers {
     font-size: 1.3rem;
     font-weight: 700;
     margin: 0 10px;
@@ -379,6 +378,7 @@ footer .footer2 .rights p:nth-of-type(2) {
   }
 }
 
+/* Desktop version ********************************************* */
 @media only screen and (min-width: 768px) {
   body header .social_bar {
     background-color: #4f4f4f;
@@ -455,7 +455,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     display: none;
   }
 
-  body main .heading {
+  body main section.heading {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
@@ -465,7 +465,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-bottom: 50px;
   }
 
-  body main .heading p:nth-of-type(1) {
+  body main .heading h2 {
     color: #ec5242;
     font-size: 2.3rem;
     font-weight: 500;
@@ -480,13 +480,12 @@ footer .footer2 .rights p:nth-of-type(2) {
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
     text-align: left;
-    font-weight: bold;
     text-transform: uppercase;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
   }
 
-  body main .heading p:nth-of-type(2) {
+  body main .heading p.heading {
     color: #4f4f4f;
     font-weight: 500;
     text-align: left;
@@ -511,7 +510,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-top: 20px;
   }
 
-  body main .main_program {
+  body main section.main_program {
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
@@ -520,13 +519,13 @@ footer .footer2 .rights p:nth-of-type(2) {
     justify-content: center;
   }
 
-  body main .main_program h2 {
+  body main section.main_program h2 {
     font-size: 1.3rem;
     font-weight: 700;
     padding-bottom: 5px;
   }
 
-  body main .main_program ul {
+  body main section.main_program ul.main_program {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -535,7 +534,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-bottom: 40px;
   }
 
-  body main .main_program ul li {
+  body main section.main_program ul.main_program li.main_program {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -548,25 +547,25 @@ footer .footer2 .rights p:nth-of-type(2) {
     max-width: 230px;
   }
 
-  body main .main_program ul li:hover {
+  body main section.main_program ul.main_program li.main_program:hover {
     border: 2px solid #fff;
   }
 
-  body main .main_program ul li div {
+  body main section.main_program ul.main_program li.main_program div {
     display: block;
   }
 
-  body main .main_program ul li div img {
+  body main section.main_program ul.main_program li.main_program div img {
     width: 70%;
   }
 
-  body main .main_program ul li h2 {
+  body main section.main_program ul.main_program li.main_program h2 {
     font-size: 1.3rem;
     padding: 0;
     margin: 0;
   }
 
-  body main .main_program ul li p {
+  body main section.main_program ul.main_program li.main_program p {
     font-size: 0.7rem;
     font-weight: 400;
     margin: 0;
@@ -574,15 +573,15 @@ footer .footer2 .rights p:nth-of-type(2) {
     text-align: center;
   }
 
-  body main .main_program div.mp_div_mob {
+  body main section.main_program div.mp_div_mob {
     display: none;
   }
 
-  body main .main_program div.mp_div_dsk {
+  body main section.main_program div.mp_div_dsk {
     text-decoration: underline;
   }
 
-  body main .main_program div.mp_div_dsk a {
+  body main section.main_program div.mp_div_dsk a.mp_div_dsk {
     color: #d3d3d3;
   }
 
@@ -590,7 +589,7 @@ footer .footer2 .rights p:nth-of-type(2) {
     margin-top: 30px;
   }
 
-  body main .featured_performers h2 {
+  body main .featured_performers h2.featured_performers {
     font-size: 1.3rem;
     font-weight: 700;
     padding-bottom: 5px;
