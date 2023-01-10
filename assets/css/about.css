@@ -181,6 +181,7 @@ footer .footer2 .brand img.brand {
   body {
     width: 100%;
   }
+
   body header .social_bar {
     display: none;
   }
@@ -393,10 +394,6 @@ footer .footer2 .brand img.brand {
     justify-content: center;
     align-items: center;
     gap: 10px;
-  }
-
-  body main section.heading div.breadcrumbs img.breadcrumbsImg {
-    width: 15px;
   }
 
   body main section.heading div.breadcrumbs img.breadcrumbsImg {
