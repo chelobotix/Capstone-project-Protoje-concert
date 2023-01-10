@@ -38,12 +38,20 @@ const featuredPerformers = [
 ];
 
 const section = document.querySelector('.featured_performers');
-const heading = '<h2>Featured Performers</h2><hr class="hr1" />';
+const heading = '<h2 class="featured_performers">Featured Performers</h2><hr class="hr1" />';
 const divContainer = document.createElement('div');
 const ul = document.createElement('ul');
+const moreBtn = document.createElement('div');
+const lessBtn = document.createElement('div');
+const moreDiv = document.createElement('div');
 
 divContainer.classList.add('container');
 ul.classList.add('featured_performers', 'row');
+moreBtn.classList.add('more', 'moreBtn');
+moreBtn.innerHTML = '<p>MORE</p><img src="./assets/images/down.png" alt="down arrow" />';
+lessBtn.innerHTML = '<p>LESS</p><img src="./assets/images/up.png" alt="up arrow" />';
+moreDiv.classList.add('moreDiv', 'row', 'no_show');
+lessBtn.classList.add('more', 'no_show');
 
 for (let i = 0; i < featuredPerformers.length; i += 1) {
   const li = document.createElement('li');
@@ -58,8 +66,43 @@ for (let i = 0; i < featuredPerformers.length; i += 1) {
                         <p>${featuredPerformers[i].description}</p>
                     </div>`;
   li.innerHTML = divImg + divContent;
-  ul.appendChild(li);
+  if (i === 2) {
+    moreDiv.appendChild(li);
+    ul.appendChild(moreBtn);
+    ul.appendChild(moreDiv);
+    ul.appendChild(lessBtn);
+  } else if (i > 2) {
+    moreDiv.appendChild(li);
+  } else {
+    ul.appendChild(li);
+  }
 }
 section.innerHTML = heading;
 divContainer.appendChild(ul);
 section.appendChild(divContainer);
+
+// Events
+moreBtn.addEventListener('click', () => {
+  moreDiv.classList.add('show');
+  moreDiv.classList.remove('no_show');
+  // moreDiv.classList.add('grow');
+  lessBtn.classList.add('show');
+  lessBtn.classList.remove('no_show');
+  lessBtn.classList.add('moreBtn');
+  moreBtn.classList.add('no_show');
+  moreBtn.classList.remove('moreBtn');
+  moreBtn.classList.remove('show');
+  const screnHeigth = document.body.scrollHeight / 2 + 400;
+  window.scrollTo(0, screnHeigth);
+});
+
+lessBtn.addEventListener('click', () => {
+  moreDiv.classList.remove('show');
+  moreDiv.classList.add('no_show');
+  lessBtn.classList.remove('show');
+  lessBtn.classList.add('no_show');
+  lessBtn.classList.remove('moreBtn');
+  moreBtn.classList.remove('no_show');
+  moreBtn.classList.add('moreBtn');
+  moreBtn.classList.add('show');
+});

@@ -164,7 +164,7 @@ footer .footer2 {
 footer div.footer2 .brand {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 footer .footer2 .brand h3.brand {
@@ -197,6 +197,74 @@ footer .footer2 .brand img.brand {
 
   body header .hamburger a img {
     width: 30px;
+  }
+
+  div.hamburguer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #272a31;
+    margin-left: -100%;
+  }
+
+  .hamburguer ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+
+  .hamburguer li {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 30px;
+    border-bottom: 3px double #fff;
+  }
+
+  .hamburguer li .hamburguer-link {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  .hamburguer button {
+    float: right;
+    margin-top: 35px;
+    margin-right: 35px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .run {
+    animation: run ease 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .run-out {
+    animation: run-out ease 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes run {
+    0% {
+      margin-left: -100%;
+    }
+
+    100% {
+      margin-left: 0%;
+    }
+  }
+
+  @keyframes run-out {
+    0% {
+      margin-left: 0%;
+    }
+
+    100% {
+      margin-left: -100%;
+    }
   }
 
   body main section.heading {
@@ -351,20 +419,26 @@ footer .footer2 .brand img.brand {
     justify-content: center;
     align-items: center;
     padding-right: 7%;
+    width: 50%;
   }
 
   body header .top_bar nav:nth-of-type(2) ul {
     display: flex;
+    width: 100%;
   }
 
   body header .top_bar nav:nth-of-type(2) ul li {
-    margin-right: 20px;
+    margin-right: 70px;
   }
 
   body header .top_bar nav:nth-of-type(2) ul li a {
     color: #4f4f4f;
     font-size: 0.9rem;
     font-weight: 600;
+  }
+
+  body header .top_bar nav:nth-of-type(2) ul li:nth-child(1) a {
+    color: #ec5242 !important;
   }
 
   body header .top_bar nav:nth-of-type(2) ul li:nth-child(6) a {
@@ -374,6 +448,10 @@ footer .footer2 .brand img.brand {
   }
 
   body header .hamburger {
+    display: none;
+  }
+
+  div.hamburguer {
     display: none;
   }
 
@@ -526,6 +604,7 @@ footer .footer2 .brand img.brand {
   footer .footer2 {
     background-color: #272a31;
     color: #fff;
+    height: 215px;
   }
 
   footer .footer2 div.brand img.brand {

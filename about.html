@@ -65,9 +65,28 @@
       </div>
 
       <nav class="hamburger">
-        <a href="#"><img src="./assets/images/lista.png" alt="menu" /></a>
+        <a href="#"><img id="hamburguer-icon" src="./assets/images/lista.png" alt="menu" /></a>
       </nav>
     </header>
+
+    <div class="hamburguer">
+      <button id="btn-close" type="button" class="btn-close" aria-label="Close"></button>
+      <ul>
+        <li>
+          <a class="hamburguer-link" href="index.html"><h3 class="h3">Home</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="#logo"><h3 class="h3">Concert Logo</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="#pastEvents"><h3 class="h3">Past Concerts</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="about.html"><h3 class="h3">About</h3></a>
+        </li>
+      </ul>
+    </div>
+
     <main>
       <section class="heading">
         <div class="breadcrumbs">
@@ -96,7 +115,7 @@
         <h4><a class="heading" href="mailto:production@protoje.com">production@protoje.com</a></h4>
       </section>
 
-      <section class="logo">
+      <section id="logo" class="logo">
         <h2 class="logo">Protoje Reggae Munich Concert 2023 Logo</h2>
         <hr class="hr1" />
         <p class="logo">
@@ -107,7 +126,7 @@
         </div>
       </section>
 
-      <section class="past_events">
+      <section id="pastEvents" class="past_events">
         <h2 class="past_events">See the past Protoje's Concerts</h2>
         <hr class="hr1" />
         <p class="past_events">Take a look at the last two Protoje's Concerts wich tool place in Rio de Janeiro and Kingston.</p>
@@ -158,5 +177,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="./assets/javascript/hamburger.js"></script>
   </body>
 </html>

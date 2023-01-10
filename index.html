@@ -51,7 +51,7 @@
 
         <nav>
           <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a class="orange" href="about.html">About</a></li>
             <li><a href="#">Program</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Sponsor</a></li>
@@ -62,12 +62,30 @@
       </div>
 
       <nav class="hamburger">
-        <a href="#"><img src="./assets/images/lista.png" alt="menu" /></a>
+        <a href="#"><img id="hamburguer-icon" src="./assets/images/lista.png" alt="menu" /></a>
       </nav>
     </header>
 
+    <div class="hamburguer">
+      <button id="btn-close" type="button" class="btn-close" aria-label="Close"></button>
+      <ul>
+        <li>
+          <a class="hamburguer-link" href="index.html"><h3 class="h3">Home</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="#mainProgram"><h3 class="h3">Main Program</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="#featuredPerformers"><h3 class="h3">Featured Performers</h3></a>
+        </li>
+        <li>
+          <a class="hamburguer-link" href="about.html"><h3 class="h3">About</h3></a>
+        </li>
+      </ul>
+    </div>
+
     <main>
-      <section class="heading">
+      <section id="heading" class="heading">
         <h2>"Hello Reggae Lover"</h2>
         <h1>
           Protoje Reggae <br />
@@ -82,7 +100,7 @@
         <h4>@Olympiahalle Arena, Munich - Deutschland</h4>
       </section>
 
-      <section class="main_program">
+      <section id="mainProgram" class="main_program">
         <h2 class="main_program">Main Program</h2>
         <hr class="hr1" />
         <ul class="main_program">
@@ -100,7 +118,7 @@
             </div>
             <h2>Video Recording</h2>
             <p class="main_program">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li class="main_program">
+          </li>
 
           <li class="main_program">
             <div class="main_program">
@@ -127,14 +145,14 @@
           </li>
         </ul>
         <div class="mp_div_mob">
-          <button>Buy a Ticket Now!</button>
+          <button type="button">Buy a Ticket Now!</button>
         </div>
         <div class="mp_div_dsk">
           <a class="mp_div_dsk" href="#">SEE THE WHOLE PROGRAM</a>
         </div>
       </section>
 
-      <section class="featured_performers"></section>
+      <section id="featuredPerformers" class="featured_performers"></section>
     </main>
 
     <footer>
@@ -175,4 +193,5 @@
   </body>
 
   <script src="./assets/javascript/featuredSection.js"></script>
+  <script src="./assets/javascript/hamburger.js"></script>
 </html>
