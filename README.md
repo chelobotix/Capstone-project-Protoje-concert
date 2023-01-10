@@ -74,7 +74,10 @@
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
 
+
 <a href="https://chelobotix.github.io/Capstone-project-Protoje-concert/">Visit the Live Demo</a>
+<br/>
+<a href="https://www.loom.com/share/4c915f1d97464ae49cdbe3a3481232b6">Loom Presentation Video</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
