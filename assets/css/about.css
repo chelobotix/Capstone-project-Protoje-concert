@@ -418,8 +418,6 @@ footer .footer2 .brand img.brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 7%;
-    width: 50%;
   }
 
   body header .top_bar nav:nth-of-type(2) ul {
@@ -428,7 +426,7 @@ footer .footer2 .brand img.brand {
   }
 
   body header .top_bar nav:nth-of-type(2) ul li {
-    margin-right: 70px;
+    margin-right: 35px;
   }
 
   body header .top_bar nav:nth-of-type(2) ul li a {
@@ -441,8 +439,12 @@ footer .footer2 .brand img.brand {
     color: #ec5242 !important;
   }
 
-  body header .top_bar nav:nth-of-type(2) ul li:nth-child(6) a {
+  body header .top_bar nav:nth-of-type(2) ul li:nth-child(6) {
     border: 4px solid #ec5242;
+    min-width: 95px;
+  }
+
+  body header .top_bar nav:nth-of-type(2) ul li:nth-child(6) a {
     color: #ec5242 !important;
     padding: 10px;
   }
