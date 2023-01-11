@@ -35,7 +35,7 @@ main section.heading {
   align-items: center;
 }
 
-main .heading h2 {
+main section.heading p.subHeading {
   color: #ec5242;
   font-weight: 600;
   text-align: center;
@@ -225,6 +225,9 @@ footer .footer2 .brand img.brand {
   .hamburguer li .hamburguer-link {
     color: #ec5242;
     text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .hamburguer button {
@@ -279,7 +282,7 @@ footer .footer2 .brand img.brand {
     display: none;
   }
 
-  body main section.heading h2 {
+  body main section.heading p.subHeading {
     margin-bottom: 0;
     font-size: 1.5rem;
   }
@@ -490,8 +493,11 @@ footer .footer2 .brand img.brand {
     font-size: 0.8rem;
   }
 
-  body main .heading h2 {
-    display: none;
+  body main section.heading p.subHeading {
+    color: #ec5242;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 50px;
   }
 
   body main .heading h1 {

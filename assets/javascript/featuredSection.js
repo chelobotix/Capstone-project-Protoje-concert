@@ -85,7 +85,6 @@ section.appendChild(divContainer);
 moreBtn.addEventListener('click', () => {
   moreDiv.classList.add('show');
   moreDiv.classList.remove('no_show');
-  // moreDiv.classList.add('grow');
   lessBtn.classList.add('show');
   lessBtn.classList.remove('no_show');
   lessBtn.classList.add('moreBtn');

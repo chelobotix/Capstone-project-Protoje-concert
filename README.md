@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  
+
   <img src="assets/images/protoje1.jpg" alt="logo" width="400"  height="auto" />
   <br/>
   <img src="assets/images/Logo Barrenechea.png" alt="logo" width="300"  height="auto" />
@@ -73,11 +73,9 @@
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-
-
 <a href="https://chelobotix.github.io/Capstone-project-Protoje-concert/">Visit the Live Demo</a>
 <br/>
-<a href="https://www.loom.com/share/4c915f1d97464ae49cdbe3a3481232b6">Loom Presentation Video</a>
+<a href="https://www.loom.com/share/b2074e5004a04aae9bcb8802979bbf44">Loom Presentation Video</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
